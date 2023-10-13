@@ -6,7 +6,7 @@
 
 
 
-module.exports = router;
+
 
 var configDB = require('./config/db');
 var app = require('./config/express');
@@ -24,6 +24,7 @@ app.set('port', port);
 
 app.post('/product',async(req,res)=>{
     console.log(req.body);
+    console.log("Welcome to DressStore Application")
     res.send(res.body);
 }
 )
